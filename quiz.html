@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quizz Rick and Morty</title>
+    <title>Rick and Morty Quiz</title>
+    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
+    <nav class="navbar">
+        <div style="display: flex">
+            <h2>Rick and Morty wiki</h2>
+            <img class="icon" height="35px" src="icon.svg">
+        </div>
+    
+        <div>
+            <a href="index.html">Home |</a>
+            <a href="wiki.html">Wiki |</a>
+            <a href="quiz.html">Quiz RnM</a>
+        </div>
+    </nav>
+    
+    <!-- Formulário de temporadas assistidas - Tipo: checkbox -->
+
+    <h1>Gostou do nosso projeto até aqui? Nos diga quais temporadas de Rick and Morty você assistiu e responda um quizz!</h1>
+    <form>
+        <label><input type="checkbox" name="esportes" value="t1"> 1° Temporada </label>
+        <label><input type="checkbox" name="esportes" value="t2"> 2° Temporada </label>
+        <label><input type="checkbox" name="esportes" value="t3"> 3° Temporada </label>
+        <label><input type="checkbox" name="esportes" value="t3"> 4° Temporada </label>
+        <label><input type="checkbox" name="esportes" value="t3"> 5° Temporada </label>
+        <label><input type="checkbox" name="esportes" value="t3"> 6° Temporada </label>
+        <label><input type="checkbox" name="esportes" value="t3"> 7° Temporada </label><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <!-- Formulário principal - Tipo: radio -->
 
     <h1>Descubra qual personagem de Rick and Morty você é!</h1>
     <form>
@@ -82,11 +114,9 @@
 
     <button type="button" onclick="calcularResultado()">Ver Resultado</button>
 
-
     <h3 id="result"></h3>
     <div id="characterInfo"></div>
-    <script src="script.js"></script>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <script src="quiz.js"></script>
 
 </body>
 </html>
