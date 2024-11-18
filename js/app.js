@@ -1,5 +1,6 @@
 const charsContainer = document.querySelector('.card-grid');
 const loadMoreButton = document.querySelector('#load-more')
+const searchNameInput = document.querySelector('#sarchNameInput')
 
 const API = "https://rickandmortyapi.com/api"
 const defaultFilters = {
@@ -17,6 +18,12 @@ async function handleLoadMore(){
 
 function addListeners(){
     loadMoreButton.addEventListener('click', handleLoadMore)
+    searchNameInput.addEventListener('keyup', async (event) => {
+        defaultFilters.name = event.target.value
+        charsContainer.innerHTML = ''
+        const characters = await getCharacters(defaultFilters)
+        render({characters})
+    })
 }
 
 async function getCharacters({name, species, gender, status, page=1}){

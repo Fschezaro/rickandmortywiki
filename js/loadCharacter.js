@@ -7,10 +7,13 @@ getCharacter(characterID)
 
 function renderCharacter(character){
     return charsContainer.innerHTML += `
+        
         <div><img src="${character.image}" alt="Person 1"></div>
-        <div>
+        <div style="width: 100%">
             <h2>${character.name}</h2>
-            <p>${character.species}</p>
+            <strong>Espécie:</strong><p>${character.species}</p>
+            <strong>Origem:</strong><p>${character.origin.name}</p>
+            <strong>Localização:</strong><p>${character.location.name}</p>
         </div>
         `
 }
