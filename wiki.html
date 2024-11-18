@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rick and Morty Wiki</title>
+    <link rel="shortcut icon" href="icon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div style="display: flex">
+        <h2>Rick and Morty wiki</h2>
+        <img class="icon" height="35px" src="icon.svg">
+    </div>
+
+    <div>
+        <a href="index.html">Home |</a>
+        <a href="wiki.html">Wiki |</a>
+        <a href="quiz.html">Quiz RnM</a>
+    </div>
+</nav>
+
+<div class="element-center"><input class="search-input" id="sarchNameInput" type="text" placeholder="Pesquie o personagem por nome"></div>
+<div class="card-grid"></div>
+
+<div class="element-center"><button id="load-more">Mostrar mais</button></div>
+
+<script src="./app.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 5px 20px;
+    color: white;
+}
+
+.navbar .icon {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.content{
+    margin: 45px 200px;
+    align-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 30px ;
+    text-align: center;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 colunas */
+    gap: 20px; /* Espaço entre os cards */
+    margin: 50px 100px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 15px;
+}
+.card-extended {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    margin: 100px 100px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+}
+
+.card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.card p {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.element-center{
+    display: flex;
+    justify-content: center;
+    margin: 3% 0;
+}
+
+#sarchNameInput{
+    width: 100%; /* Largura total do contêiner */
+    max-width: 300px; /* Largura máxima */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza clara */
+    border-radius: 5px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho do texto */
+    outline: none; /* Remove o contorno padrão ao focar */
+}
+
+#load-more{
+    align-self: center;
+    background-color: #007BFF; /* Azul claro */
+    color: white; /* Texto branco */
+    border: none; /* Remove a borda padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 20px; /* Espaçamento interno */
+    font-size: 16px; /* Tamanho do texto */
+}
+
+footer {
+    padding: 20px 20px ;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
