@@ -110,7 +110,7 @@ body {
     outline: none; /* Remove o contorno padrão ao focar */
 }
 
-#load-more{
+.btn1 {
     align-self: center;
     background-color: #007BFF; /* Azul claro */
     color: white; /* Texto branco */
@@ -136,4 +136,9 @@ footer a {
 a {
     text-decoration: none;
     color: black;
+}
+
+.form {
+    margin: 5% 5%  ;
+    text-align: center;
 }

@@ -10,21 +10,20 @@
 
 <body>
 
-    <nav class="navbar">
-        <div style="display: flex">
-            <h2>Rick and Morty wiki</h2>
-            <img class="icon" height="35px" src="icon.svg">
-        </div>
-    
-        <div>
-            <a href="index.html">Home |</a>
-            <a href="wiki.html">Wiki |</a>
-            <a href="quiz.html">Quiz RnM</a>
-        </div>
-    </nav>
+<nav class="navbar">
+    <div style="display: flex">
+        <a href="index.html"><h2>Rick and Morty wiki</h2></a>
+        <a href="index.html"><img class="icon" height="35px" src="icon.svg"></a>
+    </div>
+    <div>
+        <a href="index.html">Home |</a>
+        <a href="wiki.html">Wiki |</a>
+        <a href="quiz.html">Quiz RnM</a>
+    </div>
+</nav>
     
     <!-- Formulário de temporadas assistidas - Tipo: checkbox -->
-
+ <div class="form">
     <h1>Gostou do nosso projeto até aqui? Nos diga quais temporadas de Rick and Morty você assistiu e responda um quizz!</h1>
     <form>
         <label><input type="checkbox" name="esportes" value="t1"> 1° Temporada </label>
@@ -112,11 +111,15 @@
         <label><input type="radio" name="objetivo" value="Birdperson">E) Trazer paz e compreensão para o mundo.</label><br><br>
     </form>
 
-    <button type="button" onclick="calcularResultado()">Ver Resultado</button>
+    <button class="btn" type="button" onclick="calcularResultado()">Ver Resultado</button>
 
     <h3 id="result"></h3>
     <div id="characterInfo"></div>
+     <footer>
+         <a href="https://github.com/LucasVazRosario">Github Lucas Vaz</a> | <a href="https://github.com/Fschezaro">Github Fernando Schezaro</a> | <a href="wiki.html">Rick and morty wiki</a>
+     </footer>
     <script src="quiz.js"></script>
+ </div>
 
 </body>
 </html>

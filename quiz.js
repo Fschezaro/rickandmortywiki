@@ -63,15 +63,17 @@ async function buscarDadosPersonagem(nomePersonagem) {
 function displayCharacter(character) {
     // Preenche a área de informações do personagem com seus dados
     document.getElementById('characterInfo').innerHTML = `
-        <h3>${character.name}</h3>  <!-- Exibe o nome do personagem -->
-        <img src="${character.image}" alt="${character.name}" style="width:200px;">  <!-- Exibe a imagem do personagem -->
-        <br>
-        <strong>Status:</strong> ${character.status}  <!-- Exibe o status do personagem -->
-        <br>
-        <strong>Espécie:</strong> ${character.species}  <!-- Exibe a espécie do personagem -->
-        <br>
-        <strong>Origem:</strong> ${character.origin.name}  <!-- Exibe a origem do personagem -->
-        <br>
-        <strong>Localização:</strong> ${character.location.name}  <!-- Exibe a localização do personagem -->
-    `;
+        <a href="character.html?id=${character.id}">
+            <div style="display: flex; justify-content: center">            
+                <div class="card" style="width:200px; align-self: center">
+                    <img src="${character.image}" alt="Person 1">
+                    <h3>${character.name}</h3>
+                    <p>${character.species}</p>
+                    <strong>Espécie:</strong> ${character.species}
+                    <strong>Origem:</strong> ${character.origin.name}
+                    <strong>Localização:</strong> ${character.location.name}
+                </div>
+            </div>
+        </a>    
+        `;
 }
