@@ -30,22 +30,38 @@
 
 <!-- Formulário de cadastro Newsletter - 5 Tipos de cam´pos: text, email, password, number, tel-->
  
-<div class="content">
+<div class="cadastro">
     <h1>Cadastre-se</h1>
     <p>Insira seus dados abaixo e receba acesso antecipado a todas as aventuras de Rick e Morty!</p>
     <form>
-        <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required><br><br>
-        <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-        <label for="password">Senha:</label>
-            <input type="password" id="password" name="password" required><br><br>
-        <label for="idade">Idade:</label>
-            <input type="number" id="idade" name="idade" required><br><br>
-        <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required><br><br>
-        <input type="reset" value="Limpar">
-        <button type="submit">Cadastrar</button>
+        <table>
+            <tr>
+                <td><label for="name">Nome:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Senha:</label></td>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <td><label for="idade">Idade:</label></td>
+                <td><input type="number" id="idade" name="idade" required></td>
+            </tr>
+            <tr>
+                <td><label for="telefone">Telefone:</label></td>
+                <td><input type="tel" id="telefone" name="telefone" required></td>
+            </tr>
+            <tr>
+                <td colspan="2" class="actions"><br>
+                <input type="reset" value="Limpar">
+                <button type="submit">Cadastrar</button>
+                </td>
+            </tr>
+        </table>
     </form>
 </div>
 

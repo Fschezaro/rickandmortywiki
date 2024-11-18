@@ -40,6 +40,16 @@ body {
     text-align: center;
 }
 
+.cadastro{
+    margin: 45px 200px;
+    align-content: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px 30px ;
+    text-align: left;
+}
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr); /* 4 colunas */
