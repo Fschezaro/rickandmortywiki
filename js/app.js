@@ -2,6 +2,8 @@ const charsContainer = document.querySelector('.card-grid');
 const loadMoreButton = document.querySelector('#load-more')
 const searchNameInput = document.querySelector('#sarchNameInput')
 
+
+
 const API = "https://rickandmortyapi.com/api"
 const defaultFilters = {
     name: '',
@@ -24,7 +26,7 @@ function addListeners(){
         const characters = await getCharacters(defaultFilters)
         render({characters})
     })
-}
+} 
 
 async function getCharacters({name, species, gender, status, page=1}){
     const response = await fetch(`${API}/character?name=${name}&page=${page}`)
