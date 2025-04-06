@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif; /* teste fonte, voltar arial */
-    background-color: #f4f4f4;
+    background-color: #fff;
     margin: 0;
 }
 
@@ -23,6 +23,53 @@ body {
     vertical-align: middle;
     margin-top: -2px;
 }
+
+section.next-content {
+    background-color: #1a1a1a;
+}
+
+.hero-banner {
+    position: relative;
+    background-image: url("banner-rickmorty.png"); 
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: inset 0 -150px 200px rgba(0, 0, 0, 0.6); /* sombra escurecendo embaixo */
+    border-bottom: 5px solid #1a1a1a;
+  }
+  
+  .hero-figure {
+    color: white;
+    position: absolute;
+    top: 15%; /* mais pra cima */
+    right: 5%; /* mais pro canto direito */
+    background: rgba(0, 0, 0, 0.5); /* leve transparência pra destacar o texto */
+    padding: 25px;
+    border-radius: 16px;
+    width: 300px;
+    height: 200px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .hero-figure h1 {
+    font-family: 'Bangers', cursive;
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px #000;
+    letter-spacing: 1px; /* afasta um pouquinho as letras */
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1); /* dá uma suavizada no peso visual */
+    font-weight: normal;
+  }
+  
+  .hero-figure p {
+    font-family: Arial, sans-serif;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-shadow: 1px 1px 3px #000;
+  }
 
 .navbar {
     display: flex;
