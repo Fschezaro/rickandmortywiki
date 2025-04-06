@@ -20,6 +20,7 @@ function renderCharacter(character){
         `
 }
 async function getCharacter(id){
+    
 
     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
     const character = await response.json();

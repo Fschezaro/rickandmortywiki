@@ -64,8 +64,8 @@ async function render({ characters }) {
         card.addEventListener('mouseenter', () => {
             card.style.transform = 'scale(1.03)';
             card.style.boxShadow = `
-                0 10px 20px rgba(0, 0, 0, 0.2),   /* sombra original */
-                0 0 15px 2px rgba(119, 63, 160, 0.4) /* sombra verde suave */
+                0 10px 20px rgba(0, 0, 0, 0.91),   /* sombra original */
+                0 0 15px 2px rgba(192, 65, 212, 0.4) /* sombra verde suave */
             `;
         });
 

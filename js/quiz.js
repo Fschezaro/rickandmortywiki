@@ -77,3 +77,5 @@ function displayCharacter(character) {
         </a>    
         `;
 }
+ 
+
