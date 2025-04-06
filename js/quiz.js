@@ -77,5 +77,7 @@ function displayCharacter(character) {
         </a>    
         `;
 }
+
+
  
 

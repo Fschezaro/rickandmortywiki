@@ -205,6 +205,7 @@ a {
     text-align: center;
     color: #000000;
     align-self: center;
+   
  
    
    
@@ -212,25 +213,29 @@ a {
 
 .form label {
      color: #000000;
-    font-style: italic;
+     font-style: italic;
      display: inline-block;
      padding: 3px;
      cursor: pointer;  
-     border: 2px dashed #f0f0f0;  
+     border-radius: 80px;
+     border: 1px dashed #f0f0f0;  
      margin-bottom: 10%;
      margin-block: 3px;
-     background:#E6E6FA;
+     background: #d0dad8;
      text-align: justify;
-     width: 420px;
+     width: 440px;
      height: 20px;
-    
-      
+
+
+
 }
+.form label:hover {
+    background-color: #a6cfc8;
+    border: 4px solid #abec8d;
+    transform: scale(1.03); 
+    box-shadow: 0 0 10px #161815; 
+    transition: all 0.2s ease;
 
 
   
-
-
-
- 
-    
+} 
