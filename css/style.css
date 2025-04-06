@@ -290,8 +290,8 @@ a {
 }
 
 .banner-quiz {
-    width: 1800px;
-    height: 500px;
+    width: 1520px;
+    height: 400px;
     display: flex;
     align-content: center;
     justify-content: center;
@@ -377,14 +377,3 @@ a {
     z-index: -1;
   }
 
-.banner-quiz {
-    width: 1690px;
-    height: 500px;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background: #040404;
-    margin-bottom: 20px;
-    border-radius: 1px;s
-
-}
