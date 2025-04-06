@@ -230,8 +230,8 @@ a {
 
 }
 .form label:hover {
-    background-color: #a6cfc8;
-    border: 4px solid #abec8d;
+    background-color: #c2e4de;
+    border: 4px solid #b3df67;
     transform: scale(1.03); 
     box-shadow: 0 0 10px #161815; 
     transition: all 0.2s ease;
