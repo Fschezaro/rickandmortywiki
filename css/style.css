@@ -71,6 +71,13 @@ body {
     
 }
 
+.content h2 {
+font-family: orkney;
+color: #151717;
+font-size: 30px;
+
+}
+
 .cadastro{
     margin: 45px 200px;
     align-content: center;
@@ -278,23 +285,10 @@ a {
  
 } 
 
-.btn-outline-purple {
-    color: #6f42c1;
-    border: 2px solid #6f42c1;
-    background-color: transparent;
- }
+.mb-4 {
+    text-align: center;
+}
 
- /* Quando o botão está selecionado */
- .btn-check:checked + .btn-outline-purple {
-   background-color: #6f42c1;
-   color: #fff;
-   border-color: #6f42c1; 
- }
 
- .btn-group.flex-wrap > .btn {
-   margin: 4px;
- }
 
- .btn-group .btn {
-    margin: 0;
- }
+
