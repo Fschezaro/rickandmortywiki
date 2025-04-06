@@ -377,3 +377,12 @@ a {
     z-index: -1;
   }
 
+  .wiki-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* espaço entre os botões */
+    padding: 20px;
+  }
+  
+ 
+  
