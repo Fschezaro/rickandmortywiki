@@ -10,6 +10,9 @@
 </head>
 
 <body>
+    <body class="no-scroll"> </div>
+    <div class="quiz-background"></div>
+      
 <nav class="navbar">
   <div style="display: flex">
     <a href="index.html"><h2>Rick and Morty wiki</h2></a>
@@ -22,36 +25,39 @@
   </div>
 </nav>
 
-<div class="container my-5">
-  <h2 class="mb-4">Assistiu Rick and Morty?<br>
-    Escolha as temporadas e teste seus conhecimentos!</h2>
 
-  <form action="quiz_index.html" method="get">
-    <div class="btn-group flex-wrap mb-4" role="group" aria-label="Temporadas Rick and Morty">
-      <input type="checkbox" class="btn-check" id="temp1" name="esportes" value="t1" autocomplete="off">
-      <label class="btn btn-outline-purple btn-lg" for="temp1">1° Temporada</label>
-
-      <input type="checkbox" class="btn-check" id="temp2" name="esportes" value="t2" autocomplete="off">
-      <label class="btn btn-outline-purple btn-lg" for="temp2">2° Temporada</label>
-
-      <input type="checkbox" class="btn-check" id="temp3" name="esportes" value="t3" autocomplete="off">
-      <label class="btn btn-outline-purple btn-lg" for="temp3">3° Temporada</label>
-
-      <input type="checkbox" class="btn-check" id="temp4" name="esportes" value="t4" autocomplete="off">
-      <label class="btn btn-outline-purple btn-lg" for="temp4">4° Temporada</label>
-
-      <input type="checkbox" class="btn-check" id="temp5" name="esportes" value="t5" autocomplete="off">
-      <label class="btn btn-outline-purple btn-lg" for="temp5">5° Temporada</label>
-
-      <input type="checkbox" class="btn-check" id="temp6" name="esportes" value="t6" autocomplete="off">
-      <label class="btn btn-outline-purple btn-lg" for="temp6">6° Temporada</label>
-
-      <input type="checkbox" class="btn-check" id="temp7" name="esportes" value="t7" autocomplete="off">
-      <label class="btn btn-outline-purple btn-lg" for="temp7">7° Temporada</label>
+<div class="principal">
+    <div class="formtemp">  
+        <div class="titletemp">
+            <h2 class="mb-4">Assistiu Rick and Morty?<br>Escolha as temporadas e teste seus conhecimentos!</h2>
+        </div>
+        <form action="quiz_index.html" method="get">
+            <div class="temp-buttons mb-4">
+                <input type="checkbox" class="btn-check" id="temp1" name="esportes" value="t1" autocomplete="off">
+                <label class="btn btn-outline-purple btn-lg" for="temp1">1° Temporada</label>
+              
+                <input type="checkbox" class="btn-check" id="temp2" name="esportes" value="t2" autocomplete="off">
+                <label class="btn btn-outline-purple btn-lg" for="temp2">2° Temporada</label>
+              
+                <input type="checkbox" class="btn-check" id="temp3" name="esportes" value="t3" autocomplete="off">
+                <label class="btn btn-outline-purple btn-lg" for="temp3">3° Temporada</label>
+              
+                <input type="checkbox" class="btn-check" id="temp4" name="esportes" value="t4" autocomplete="off">
+                <label class="btn btn-outline-purple btn-lg" for="temp4">4° Temporada</label>
+              
+                <input type="checkbox" class="btn-check" id="temp5" name="esportes" value="t5" autocomplete="off">
+                <label class="btn btn-outline-purple btn-lg" for="temp5">5° Temporada</label>
+              
+                <input type="checkbox" class="btn-check" id="temp6" name="esportes" value="t6" autocomplete="off">
+                <label class="btn btn-outline-purple btn-lg" for="temp6">6° Temporada</label>
+              
+                <input type="checkbox" class="btn-check" id="temp7" name="esportes" value="t7" autocomplete="off">
+                <label class="btn btn-outline-purple btn-lg" for="temp7">7° Temporada</label>
+              </div>
+    <br>
+        <input class="btn btn-success" type="submit" value="Enviar">
+        </form>
     </div>
-<br>
-    <input class="btn btn-success" type="submit" value="Enviar">
-  </form>
 </div>
 
 <footer style="position: fixed; bottom: 0; width: 100%">
