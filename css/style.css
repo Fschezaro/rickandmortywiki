@@ -221,7 +221,7 @@ a {
      border: 1px dashed #f0f0f0;  
      margin-bottom: 10%;
      margin-block: 3px;
-     background: #d0dad8;
+     background: #e3edeb;
      text-align: justify;
      width: 440px;
      height: 20px;
@@ -235,7 +235,5 @@ a {
     transform: scale(1.03); 
     box-shadow: 0 0 10px #161815; 
     transition: all 0.2s ease;
-
-
-  
+ 
 } 
