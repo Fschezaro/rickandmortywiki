@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Poppins:wght@400;700&display=swap');
+
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif; /* teste fonte, voltar arial */
     background-color: #f4f4f4;
     margin: 0;
 }
@@ -8,6 +10,7 @@ body {
     background-color: #333;
     padding: 15px 30px;
     color: white;
+    font-family: 'Bangers', cursive; /* teste fonte, apagar*/
 }
 
 .icon {
@@ -44,6 +47,7 @@ body {
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    font-family: 'Poppins', sans-serif; /* teste fonte */
   }
   
   .navbar a:hover {
@@ -90,6 +94,7 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     border: none;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif; /* teste fonte */
   }
   
   .botao:hover {
@@ -119,6 +124,7 @@ body {
     text-align: center;
     padding: 15px;
     margin: auto;
+    font-family: 'Poppins', sans-serif; /* teste fonte */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -133,6 +139,7 @@ body {
     padding: 20px;
     margin: auto;
     margin-top: 100px;
+    font-family: 'Poppins', sans-serif; /* teste fonte */
 }
 
 .card img {
@@ -144,6 +151,7 @@ body {
 .card h3 {
     font-size: 1.2em;
     margin: 10px 0;
+    font-family: 'Bangers', cursive;
 }
 
 .card p {
@@ -165,6 +173,7 @@ body {
     border-radius: 5px; /* Bordas arredondadas */
     font-size: 16px; /* Tamanho do texto */
     outline: none; /* Remove o contorno padrão ao focar */
+    font-family: 'Poppins', sans-serif; /* teste fonte */
 }
 
 .btn {
@@ -175,6 +184,7 @@ body {
     border-radius: 5px; /* Bordas arredondadas */
     padding: 10px 20px; /* Espaçamento interno */
     font-size: 16px; /* Tamanho do texto */
+    font-family: 'Poppins', sans-serif; /* teste fonte */
 }
 
 footer {
@@ -183,6 +193,7 @@ footer {
     color: white;
     text-align: center;
     font-size: 10px;
+    font-family: 'Poppins', sans-serif; /* teste fonte */
 }
 
 footer a {
