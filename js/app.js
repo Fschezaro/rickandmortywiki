@@ -37,10 +37,12 @@ async function getCharacters({name, species, gender, status, page=1}){
     return characters.results
 }
 
-async function render({characters}){
-    characters.forEach((character)=>{
+async function render({ characters }) {
+    charsContainer.innerHTML = ""; // Limpa antes de renderizar
 
-        return charsContainer.innerHTML += `
+    characters.forEach((character) => {
+        // Adiciona o card
+        charsContainer.innerHTML += `
         <a href="character.html?id=${character.id}">
             <div class="card">
                 <img src="${character.image}" alt="Person 1">
@@ -48,9 +50,34 @@ async function render({characters}){
                 <p>${character.species}</p>
             </div>
         </a>
-        `
-    })
+        `;
+    });
+
+    // Depois que todos os cards foram adicionados, seleciona eles
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach((card) => {
+        // Adiciona transição suave
+        card.style.transition = 'all 0.5s ease';
+
+        // Evento ao passar o mouse
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'scale(1.03)';
+            card.style.boxShadow = `
+                0 10px 20px rgba(0, 0, 0, 0.2),   /* sombra original */
+                0 0 15px 2px rgba(0, 255, 0, 0.4) /* sombra verde suave */
+            `;
+        });
+
+        // Evento ao tirar o mouse
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'scale(1)';
+            card.style.boxShadow = '0 2px 5px rgba(0, 0, 0, 0.1)';
+        });
+    });
 }
+
+
 
 async function main() {
     const characters = await getCharacters(defaultFilters)
