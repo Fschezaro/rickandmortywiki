@@ -3,6 +3,8 @@ const characterID = urlParams.get('id');
 const charsContainer = document.querySelector('.card-extended');
 getCharacter(characterID)
 
+document.getElementById
+
 
 
 function renderCharacter(character){
