@@ -68,12 +68,12 @@ body {
     border-radius: 8px;
     padding: 10px 30px ;
     text-align: center;
-   
+
     
 }
 
 .content h2 {
-font-family: orkney;
+
 color: #151717;
 font-size: 30px;
 
@@ -127,7 +127,7 @@ font-size: 30px;
     border-radius: 30px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
    text-align: center;
-    padding: 15px;
+    padding: 50px;
     margin: auto;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -155,6 +155,7 @@ font-size: 30px;
     font-size: 1.2em;
     margin: 10px 0;
 }
+
 
 .card p {
     color: #555;
@@ -384,5 +385,26 @@ a {
     padding: 20px;
   }
   
- 
+  .typewriter {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 3px solid #289782; 
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 35px;
+    color: #000000; 
+    letter-spacing: 6px;
+    width: 0;
+    animation: typing 3.5s steps(45, end) forwards, blink 0.75s step-end infinite;
+    text-shadow: 0 0 5px #00ffc3, 0 0 10px #00ffc3, 0 0 20px #289782;
+  }
+    
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+    
+  @keyframes blink {
+    50% { border-color: transparent }
+  }
+  
   
