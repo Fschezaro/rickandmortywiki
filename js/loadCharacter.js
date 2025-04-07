@@ -5,12 +5,12 @@ getCharacter(characterID)
 
 document.getElementById
 
-
-
 function renderCharacter(character){
-    return charsContainer.innerHTML += `
-        
-        <div><img src="${character.image}" alt="Person 1"></div>
+    return charsContainer.innerHTML += 
+        `
+        <div>
+            <img src="${character.image}" alt="Person 1">
+        </div>
         <div style="width: 100%">
             <h2>${character.name}</h2>
             <strong>Espécie:</strong><p>${character.species}</p>
@@ -20,8 +20,6 @@ function renderCharacter(character){
         `
 }
 async function getCharacter(id){
-    
-
     const response = await fetch(`https://rickandmortyapi.com/api/character/${id}`)
     const character = await response.json();
     renderCharacter(character)
