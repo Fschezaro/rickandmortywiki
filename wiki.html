@@ -24,20 +24,24 @@
 </nav>
 
 <form action="wiki.html" method="get">
-    
-    <div class="wiki-buttons">
-      <input type="checkbox" class="btn-check" id="personagens1" name="esportes" value="t1" autocomplete="off">
-      <label class="btn btn-outline-info" for="personagens1">Personagens</label>
-  
-      <input type="checkbox" class="btn-check" id="episodios" name="esportes" value="t2" autocomplete="off">
-      <label class="btn btn-outline-info" for="episodios">Episódios</label>
-  
-      <input type="checkbox" class="btn-check" id="locais" name="esportes" value="t3" autocomplete="off">
-      <label class="btn btn-outline-info" for="locais">Locais</label>
+    <div class="principal">
+        <div class="element-center"><input class="search-input" id="sarchNameInput" type="text" placeholder="Pesquise"></div>
+
+        <div class="wiki-buttons">
+
+        <input type="checkbox" class="btn-check" id="temp1" name="esportes" value="t1" autocomplete="off">
+        <label class="btn btn-outline-purple btn-lg" for="temp1">Personagens</label>
+        
+        <input type="checkbox" class="btn-check" id="temp2" name="esportes" value="t2" autocomplete="off">
+        <label class="btn btn-outline-purple btn-lg" for="temp2">Episódios</label>
+        
+        <input type="checkbox" class="btn-check" id="temp3" name="esportes" value="t3" autocomplete="off">
+        <label class="btn btn-outline-purple btn-lg" for="temp3">Locais</label>
+
+        </div>
     </div>
-  </form>
+</form>
   
-<div class="element-center"><input class="search-input" id="sarchNameInput" type="text" placeholder="Pesquie o personagem por nome"></div>
 <div class="card-grid"></div>
 
 <div class="element-center"><button id="load-more" class="btn">Mostrar mais</button></div>

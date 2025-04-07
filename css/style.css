@@ -385,6 +385,12 @@ a {
     padding: 20px;
   }
   
+  .wiki-buttons .btn {
+    flex: 1;
+    max-width: 200px;
+    text-align: center;
+  }
+  
   .typewriter {
     overflow: hidden;
     white-space: nowrap;
