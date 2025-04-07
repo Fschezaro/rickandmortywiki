@@ -395,7 +395,7 @@ a {
     letter-spacing: 6px;
     width: 0;
     animation: typing 3.5s steps(45, end) forwards, blink 0.75s step-end infinite;
-    text-shadow: 0 0 5px #00ffc3, 0 0 10px #00ffc3, 0 0 20px #289782;
+    text-shadow: 0 0 5px #32CD32, 0 0 10px #00ffc3, 0 0 20px #289782;
   }
     
   @keyframes typing {
