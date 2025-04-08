@@ -1,3 +1,4 @@
+<!-- HTML (adicionei classes e IDs para os novos elementos) -->
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
@@ -10,11 +11,10 @@
     </head>
 
     <body> 
-
         <header class="header">
                 <div class="title-icon">
-                    <img class="icon" height="35px" src="css/icon.svg" alt="Logo Rick and Morty"> <!-- nome + icone-->
-                    <h2 style="color: white;">Rick and Morty wiki</h2> <!-- nome + icone -->
+                    <img class="icon" height="35px" src="css/icon.svg" alt="Logo Rick and Morty">
+                    <h2 style="color: white;">Rick and Morty wiki</h2>
                 </div>
                 <nav class="nav-links">
                     <a href="index.html">Home</a>
@@ -23,27 +23,23 @@
                 </nav>
         </header>
 
-        <form action="wiki.html" method="get">
-            
-            <div class="wiki-buttons">
-            <input type="checkbox" class="btn-check" id="personagens1" name="esportes" value="t1" autocomplete="off">
-            <label class="btn btn-outline-info" for="personagens1">Personagens</label>
+        <div class="wiki-buttons">
+            <button id="show-characters" class="btn btn-outline-info active">Personagens</button>
+            <button id="show-episodes" class="btn btn-outline-info">Episódios</button>
+            <button id="show-locations" class="btn btn-outline-info">Locais</button>
+        </div>
         
-            <input type="checkbox" class="btn-check" id="episodios" name="esportes" value="t2" autocomplete="off">
-            <label class="btn btn-outline-info" for="episodios">Episódios</label>
+        <div class="element-center">
+            <input class="search-input" id="searchInput" type="text" placeholder="Pesquise por nome">
+        </div>
         
-            <input type="checkbox" class="btn-check" id="locais" name="esportes" value="t3" autocomplete="off">
-            <label class="btn btn-outline-info" for="locais">Locais</label>
-            </div>
-        </form>
-        <div class="element-center"><input class="search-input" id="sarchNameInput" type="text" placeholder="Pesquie o personagem por nome"></div>
         <div class="card-grid"></div>
         <div class="element-center">
             <button id="load-more" class="btn">Mostrar mais</button>
         </div>
+        
     <footer>
     </footer>
     <script src="js/app.js"></script>
-
     </body>
 </html>
