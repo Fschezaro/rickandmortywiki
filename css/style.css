@@ -279,8 +279,7 @@ a {
 }
 
 .banner-quiz {
-  width: 1520px;
-  height: 400px;
+  width: 100%;
   display: flex;
   align-content: center;
   justify-content: center;
