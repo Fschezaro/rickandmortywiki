@@ -7,15 +7,17 @@ document.getElementById
 
 function renderCharacter(character){
     return charsContainer.innerHTML += 
-        `
-        <div>
-            <img src="${character.image}" alt="Person 1">
-        </div>
-        <div style="width: 100%">
-            <h2>${character.name}</h2>
-            <strong>Espécie:</strong><p>${character.species}</p>
-            <strong>Origem:</strong><p>${character.origin.name}</p>
-            <strong>Localização:</strong><p>${character.location.name}</p>
+        `       
+        <div class="character-card">
+            <div>
+                <img src="${character.image}" alt="Imagem do personagem ${character.name}">
+            </div>
+            <div class="character-info">
+                <h2>${character.name}</h2>
+                <strong>Espécie:</strong><p>${character.species}</p>
+                <strong>Origem:</strong><p>${character.origin.name}</p>
+                <strong>Localização:</strong><p>${character.location.name}</p>
+            </div>
         </div>
         `
 }
