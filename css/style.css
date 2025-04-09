@@ -452,15 +452,28 @@ section.next-content {
 
 .card-extended {
   display: flex;
+  justify-content: space-around;
   width: 40%;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   margin: auto;
   margin-top: 100px;
+  margin-bottom: 10%;
+
+}
+
+.character-card{
+  display: flex;
+}
+
+.character-info{
+  width: 100%;
+  text-align: center;
+  margin-left: 50px;
 }
 
 .card img {
@@ -726,7 +739,6 @@ a {
     gap: 2%;
   }
 
-
   .nav-links a {
     width: 100%;
     text-align: center;
@@ -741,113 +753,114 @@ a {
   .temp-buttons {
     grid-template-columns: repeat(3, minmax(120px, 1fr));
   }
-
-  @media (max-width: 600px) {
-    .card-grid {
-      grid-template-columns: 1fr; /* 1 coluna para celulares */
-    }
-   
-    .character-card{
-      display: flex;
-      flex-direction: column;
-    }
-
-  }
   
+  .character-info{
+    margin-left: 0;
+  }
 }
 
- .btn-group.flex-wrap > .btn {
-   margin: 4px;
- }
-
- .btn-group .btn {
-    margin: 0;
- }
-
- .temp-buttons {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 15px;
-    justify-content: center;
-    max-width: 800px;
-    margin: 0 auto;
+@media (max-width: 600px) {
+  .card-grid {
+    grid-template-columns: 1fr; /* 1 coluna para celulares */
   }
-
- .formtemp {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 40vh;
-  }
-
-  .no-scroll {
-    overflow: hidden;
-  }
-  
-  .principal {
-    position: relative;
-    z-index: 1;
-    background: rgba(255, 255, 255, 0.2); /* fundo branco translúcido */
-    backdrop-filter: blur(10px); /* desfoca o fundo */
-    -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
-    border-radius: 20px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    padding: 40px;
-    max-width: 900px;
-    margin: 80px auto;
-    color: white; /* ou preto, dependendo da imagem de fundo */
-  }
-
-  .quiz-background {
-    background-image: url("../css/bannerquiz.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    z-index: -1;
-  }
-
-  .wiki-buttons {
-    display: flex;
-    justify-content: center;
-    gap: 10px; 
-    padding: 20px;
-  }
-  
-  .wiki-buttons .btn {
-    flex: 1;
-    max-width: 200px;
-    text-align: center;
-  }
-  
-  .typewriter {
-    overflow: hidden;
-    white-space: nowrap;
-    border-right: 3px solid #289782; 
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 35px;
-    color: #000000; 
-    letter-spacing: 6px;
-    width: 0;
-    animation: typing 3.5s steps(45, end) forwards, blink 0.75s step-end infinite;
-    text-shadow: 0 0 5px #32CD32, 0 0 10px #00ffc3, 0 0 20px #289782;
-  }
-    
-  @keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-  }
-    
-  @keyframes blink {
-    50% { border-color: transparent }
-  }
-
+ 
   .character-card{
     display: flex;
+    flex-direction: column;
   }
+
+}
+
+.btn-group.flex-wrap > .btn {
+  margin: 4px;
+}
+
+.btn-group .btn {
+  margin: 0;
+}
+
+.temp-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.formtemp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 40vh;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.principal {
+  position: relative;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.2); /* fundo branco translúcido */
+  backdrop-filter: blur(10px); /* desfoca o fundo */
+  -webkit-backdrop-filter: blur(10px); /* suporte para Safari */
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  padding: 40px;
+  max-width: 900px;
+  margin: 80px auto;
+  color: white; /* ou preto, dependendo da imagem de fundo */
+}
+
+.quiz-background {
+  background-image: url("../css/bannerquiz.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+}
+
+.wiki-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px; 
+  padding: 20px;
+}
+
+.wiki-buttons .btn {
+  flex: 1;
+  max-width: 200px;
+  text-align: center;
+}
+
+.typewriter {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid #289782; 
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 35px;
+  color: #000000; 
+  letter-spacing: 6px;
+  width: 0;
+  animation: typing 3.5s steps(45, end) forwards, blink 0.75s step-end infinite;
+  text-shadow: 0 0 5px #32CD32, 0 0 10px #00ffc3, 0 0 20px #289782;
+}
+  
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+  
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+ 
